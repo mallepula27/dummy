@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import UserForm from './UserForm';
+import AllUsers from './AllUsers';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+render() {
+return (
+<div className="App">
+    <h2 className="center ">Add Employee</h2>
+    <UserForm />
+    <AllUsers />
+</div>
+);
 }
-
+}
 export default App;
